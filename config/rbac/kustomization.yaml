@@ -1,0 +1,18 @@
+apiVersion: kustomize.config.k8s.io/v1
+kind: Kustomization
+
+resources:
+  # Service account and RBAC resources
+  - service_account.yaml
+  - role.yaml
+  - role_binding.yaml
+  - leader_election_role.yaml
+  - leader_election_role_binding.yaml
+  # Metrics protection RBAC resources
+  - metrics_auth_role.yaml
+  - metrics_auth_role_binding.yaml
+  - metrics_reader_role.yaml
+  # CustomSecret RBAC roles (Admin, Editor, Viewer)
+  - customsecret_admin_role.yaml
+  - customsecret_editor_role.yaml
+  - customsecret_viewer_role.yaml
