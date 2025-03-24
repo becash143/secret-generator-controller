@@ -74,7 +74,13 @@ spec:
 ### 4. Deploy the Controller
 
 Apply the deployment to your Kubernetes cluster:
-
+```bash
+make install
+```
+```bash
+make run
+```
+`OR`
 ```bash
 kubectl apply -f config/default/deployment.yaml
 ```
