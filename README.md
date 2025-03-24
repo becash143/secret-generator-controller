@@ -1,5 +1,5 @@
 # Recording for Secret Controller Operator
-![Asciinema Recording](https://asciinema.org/a/e588722f-c2f9-425f-bd57-8defdf5a0c1e.png)
+![Asciinema Recording](https://asciinema.org/connect/e588722f-c2f9-425f-bd57-8defdf5a0c1e)
 # Kubernetes Secret Generator Controller
 
 This project implements a Kubernetes custom controller that generates secrets based on a custom resource definition (CRD). The controller allows you to define `CustomSecret` objects, which can specify different types of secrets like basic authentication credentials and JWT tokens. The controller automatically generates and manages these secrets within the Kubernetes cluster and can rotate them based on a specified period.
